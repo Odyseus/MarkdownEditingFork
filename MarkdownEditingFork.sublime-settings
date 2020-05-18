@@ -1,0 +1,59 @@
+{
+    "preview_stylesheets": [
+        "${packages}/MarkdownEditingFork/st_assets/css/bootstrap.min.css",
+        "${packages}/MarkdownEditingFork/st_assets/css/bootstrap.tweaks.css"
+    ],
+    "commands_scope": "text.html.markdown | text.html.markdown.multimarkdown",
+    // Prevent Sublime Text from showing completions based on the contents of the view.
+    "completions_ignore_content": false,
+    // Prevent Sublime Text from showing completions based on .sublime-completions files.
+    "completions_ignore_files": false,
+    "completions_scope": "text.html.markdown | text.html.markdown.multimarkdown",
+    "completions": [{
+            "trigger": "mfc\tFenced code block",
+            "contents": "```${1:language}\n${2:code}\n```\n\n$0"
+        }, {
+            "trigger": "mh1\tHeading level 1",
+            "contents": "# ${1:Header Text}\n\n$0"
+        }, {
+            "trigger": "mh2\tHeading level 2",
+            "contents": "## ${1:Header Text}\n\n$0"
+        }, {
+            "trigger": "mh3\tHeading level 3",
+            "contents": "### ${1:Header Text}\n\n$0"
+        }, {
+            "trigger": "mh4\tHeading level 4",
+            "contents": "#### ${1:Header Text}\n\n$0"
+        }, {
+            "trigger": "mh5\tHeading level 5",
+            "contents": "##### ${1:Header Text}\n\n$0"
+        }, {
+            "trigger": "mh6\tHeading level 6",
+            "contents": "###### ${1:Header Text}\n\n$0"
+        }, {
+            "trigger": "e\tEmphasis",
+            "contents": "*${1}*"
+        }, {
+            "trigger": "se\tStrong emphasis",
+            "contents": "**${1}**"
+        }, {
+            "trigger": "mc\tLiteral",
+            "contents": "`${1}`"
+        }, {
+            "trigger": "mul\tUnordered list",
+            "contents": "- ${1:text}\n- ${2}\n- ${3}"
+        }, {
+            "trigger": "mol\tOrdered list",
+            "contents": "1. ${1}\n2. ${2}\n3. ${3}"
+        }, {
+            "trigger": "mola\tOrdered list (auto)",
+            "contents": "#. ${1}\n#. ${2}\n#. ${3}"
+        }, {
+            "trigger": "mi\tImage",
+            "contents": "![${1:Alt text}](${2:/path/to/img.jpg} \"${3:Optional title}\")\n\n$0"
+        }, {
+            "trigger": "ml\tLink",
+            "contents": "[${1:${SELECTION:display text}}](${2:link})"
+        }
+    ]
+}

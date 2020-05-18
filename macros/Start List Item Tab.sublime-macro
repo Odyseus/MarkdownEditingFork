@@ -1,0 +1,8 @@
+[{
+    "command": "right_delete"
+}, {
+    "command": "insert",
+    "args": {
+        "characters": "\t"
+    }
+}]

@@ -1,0 +1,64 @@
+[{
+    "caption": "Preferences",
+    "children": [{
+        "caption": "Package Settings",
+        "children": [{
+            "caption": "MarkdownEditingFork",
+            "children": [{
+                "command": "open_file",
+                "caption": "README",
+                "args": {
+                    "file": "${packages}/MarkdownEditingFork/README.md"
+                },
+            }, {
+                "caption": "-"
+            }, {
+                "command": "edit_settings",
+                "caption": "Plugin Settings",
+                "args": {
+                    "base_file": "${packages}/MarkdownEditingFork/MarkdownEditingFork.sublime-settings",
+                    "default": "// MarkdownEditingFork - Settings - User\n{\n\t$0\n}\n"
+                }
+            }, {
+                "command": "edit_settings",
+                "caption": "Markdown Settings",
+                "args": {
+                    "base_file": "${packages}/MarkdownEditingFork/Markdown.sublime-settings",
+                    "default": "// MarkdownEditingFork - Markdown - User\n{\n\t$0\n}\n"
+                }
+            }, {
+                "command": "edit_settings",
+                "caption": "Markdown GFM Settings",
+                "args": {
+                    "base_file": "${packages}/MarkdownEditingFork/Markdown GFM.sublime-settings",
+                    "default": "// MarkdownEditingFork - Markdown GFM - User\n{\n\t$0\n}\n"
+                }
+            }, {
+                "command": "edit_settings",
+                "caption": "MultiMarkdown Settings",
+                "args": {
+                    "base_file": "${packages}/MarkdownEditingFork/MultiMarkdown.sublime-settings",
+                    "default": "// MarkdownEditingFork - MultiMarkdown - User\n{\n\t$0\n}\n"
+                }
+            }, {
+                "command": "edit_settings",
+                "caption": "Bold and Italic Settings",
+                "args": {
+                    "base_file": "${packages}/MarkdownEditingFork/Bold and Italic Markers.tmPreferences",
+                    "default": ""
+                }
+            }, {
+                "caption": "Key Bindings",
+                "command": "edit_settings",
+                "args": {
+                    "base_file": "${packages}/MarkdownEditingFork/Default ($platform).sublime-keymap",
+                    "default": "${packages}/User/Default ($platform).sublime-keymap"
+                }
+            }]
+        }],
+        "id": "package-settings",
+        "mnemonic": "P"
+    }],
+    "id": "preferences",
+    "mnemonic": "n"
+}]
